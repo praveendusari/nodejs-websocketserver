@@ -6,7 +6,7 @@ wss.on('connection', function connection(ws) {
   ws.on('message', function message(data) {
     if(data) {
       //console.log('received: %s', data);
-      ws.send(`something received ${data}`);
+      ws.send(`${data}`);
     }
   });
 
